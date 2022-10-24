@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jamsp/AndroidStudioProjects/MyShell/app/src/main/res/drawable/day_shift.xml" value="0.2385" />
+        <entry key="..\:/Users/jamsp/AndroidStudioProjects/MyShell/app/src/main/res/drawable/ic_fluent_phone_update_checkmark_20_filled.xml" value="0.2385" />
+        <entry key="..\:/Users/jamsp/AndroidStudioProjects/MyShell/app/src/main/res/drawable/ic_fluent_shifts_add_20_filled.xml" value="0.2385" />
         <entry key="..\:/Users/jamsp/AndroidStudioProjects/MyShell/app/src/main/res/drawable/ic_shell_4.xml" value="0.294" />
         <entry key="..\:/Users/jamsp/AndroidStudioProjects/MyShell/app/src/main/res/drawable/ic_takamap.xml" value="0.294" />
         <entry key="..\:/Users/jamsp/AndroidStudioProjects/MyShell/app/src/main/res/drawable/rounded_bg.xml" value="0.286" />
