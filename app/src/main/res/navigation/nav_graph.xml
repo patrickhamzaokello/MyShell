@@ -8,14 +8,14 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.pkasemer.takamap.Fragments.Home"
+        android:name="com.pkasemer.myshell.Fragments.Home"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
     </fragment>
 
     <fragment
         android:id="@+id/navigation_cart"
-        android:name="com.pkasemer.takamap.Fragments.Issue"
+        android:name="com.pkasemer.myshell.Fragments.Issue"
         android:label="@string/title_Cart"
         tools:layout="@layout/fragment_cart" >
         <action
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.pkasemer.takamap.Fragments.Trash"
+        android:name="com.pkasemer.myshell.Fragments.Trash"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_trash" >
         <action
@@ -35,7 +35,7 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.pkasemer.takamap.Fragments.Profile"
+        android:name="com.pkasemer.myshell.Fragments.Profile"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 

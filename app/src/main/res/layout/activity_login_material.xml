@@ -48,7 +48,7 @@
                 android:includeFontPadding="false"
                 android:layout_gravity="center_horizontal"
                 android:textAlignment="center"
-                android:text="Sign into your account to access Taka Map"
+                android:text="Sign into your account to access My Shell"
                 android:textColor="@color/texton_green"
                 android:textSize="18sp"
                 android:transitionName="logo_desc" />

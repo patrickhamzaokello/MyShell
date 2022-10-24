@@ -20,7 +20,7 @@
         android:fontFamily="@font/montserrat_bold"
         android:textSize="30dp"
         android:gravity="center"
-        android:text="Taka Map"
+        android:text="My Shell"
         />
 
 
