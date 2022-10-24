@@ -8,77 +8,46 @@
     android:background="@color/over_all_bg_color"
     tools:context="Fragments.Home">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
 
-
-        <LinearLayout
-            android:id="@+id/heading_intro"
+        <View
+            android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="14dp"
-            android:background="@color/in_app_main_color"
-            >
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:scaleType="centerInside"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/shelllogotwo"/>
+            />
 
 
-            <TextView
-                android:id="@+id/register_welcomeback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Obote Denis"
-                android:textColor="@color/black"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center_horizontal"
-                android:textAlignment="center"
-                android:textSize="25sp"
-                android:includeFontPadding="false"
-                android:transitionName="logo_text"
-
-                />
-
-            <TextView
-                android:id="@+id/register_subtext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
-                android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:includeFontPadding="false"
-                android:layout_gravity="center_horizontal"
-                android:textAlignment="center"
-                android:text="Pump Attendant"
-                android:textSize="17sp"
-                android:transitionName="logo_desc" />
-
-
-        </LinearLayout>
-
+        <ImageView
+            android:id="@+id/pumplogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@+id/view"
+            android:scaleType="centerInside"
+            android:src="@drawable/shelllogotwo" />
 
 
         <TextView
             android:id="@+id/time_clock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/pumplogo"
             android:fontFamily="@font/montserrat_bold"
-            android:text="4:30pm"
-            android:textColor="#5A778C"
-            android:layout_marginTop="20dp"
-            android:layout_marginHorizontal="20dp"
-            android:textSize="25sp"
             android:includeFontPadding="false"
+            android:text="Obote Denis"
+            android:textColor="#5A778C"
+            android:textSize="25sp"
             android:transitionName="logo_text"
 
             />
@@ -87,25 +56,27 @@
             android:id="@+id/time_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pumplogo"
             android:fontFamily="@font/montserrat"
-            android:textColor="@color/black"
-            android:layout_marginHorizontal="20dp"
             android:includeFontPadding="false"
-            android:text="24th Monday, October 2022"
+            android:text="Pump Attendant"
+            android:textColor="@color/black"
+            android:layout_below="@+id/time_clock"
             android:textSize="17sp"
             android:transitionName="logo_desc" />
 
 
         <RelativeLayout
-            android:id="@+id/day_shift_layout"
+            android:id="@+id/shift_progress"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:background="@drawable/rounded_bg"
+            android:layout_below="@id/time_date"
             android:layout_marginHorizontal="20dp"
-            android:padding="20dp"
-            android:clickable="true"
             android:layout_marginTop="20dp"
-            >
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/gold_on_green_text"
+            android:clickable="true"
+            android:padding="20dp">
 
             <TextView
                 android:id="@+id/day_shift"
@@ -114,7 +85,7 @@
                 android:layout_above="@+id/day_shift_time"
                 android:fontFamily="@font/montserrat_bold"
                 android:includeFontPadding="false"
-                android:text="Day Shift"
+                android:text="Progress Update"
                 android:textColor="#5A778C"
                 android:textSize="17sp"
                 android:transitionName="logo_desc" />
@@ -126,7 +97,7 @@
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/montserrat"
                 android:includeFontPadding="false"
-                android:text="6:00 am - 6:00 pm"
+                android:text="1/3 Complete"
                 android:textColor="#85A3B9"
                 android:textSize="17sp"
                 android:transitionName="logo_desc" />
@@ -134,12 +105,12 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerInside"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/day_shift"/>
+                android:src="@drawable/day_shift" />
 
 
         </RelativeLayout>
@@ -153,6 +124,7 @@
             android:layout_marginHorizontal="20dp"
             android:padding="20dp"
             android:layout_marginTop="20dp"
+            android:layout_below="@+id/shift_progress"
             >
 
             <TextView
@@ -162,7 +134,7 @@
                 android:layout_above="@+id/night_shift_time"
                 android:fontFamily="@font/montserrat_bold"
                 android:includeFontPadding="false"
-                android:text="Night Shift"
+                android:text="Start Shift"
                 android:textColor="#5A778C"
                 android:textSize="17sp"
                 android:transitionName="logo_desc" />
@@ -174,7 +146,7 @@
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/montserrat"
                 android:includeFontPadding="false"
-                android:text="6:00 pm - 6:00 am"
+                android:text="Create Initial Readings"
                 android:textColor="#85A3B9"
                 android:textSize="17sp"
                 android:transitionName="logo_desc" />
@@ -197,6 +169,6 @@
 
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>

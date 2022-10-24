@@ -4,47 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
     android:background="@color/over_all_bg_color"
+    android:fillViewport="true"
     tools:context=".ShiftActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
 
         <LinearLayout
             android:id="@+id/heading_intro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="14dp"
             android:background="@color/in_app_main_color"
-            >
+            android:orientation="vertical"
+            android:padding="14dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerInside"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/shelllogotwo"/>
+                android:src="@drawable/shelllogotwo" />
 
 
             <TextView
                 android:id="@+id/register_welcomeback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Day Shift"
-                android:textColor="@color/black"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
-                android:textAlignment="center"
-                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_bold"
                 android:includeFontPadding="false"
+                android:text="Day Shift"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
                 android:transitionName="logo_text"
 
                 />
@@ -53,12 +51,12 @@
                 android:id="@+id/register_subtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat"
-                android:textColor="@color/black"
-                android:includeFontPadding="false"
                 android:layout_gravity="center_horizontal"
-                android:textAlignment="center"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
                 android:text="Time:  12:45pm"
+                android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 android:transitionName="logo_desc" />
 
@@ -66,18 +64,17 @@
         </LinearLayout>
 
 
-
         <TextView
             android:id="@+id/time_clock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
             android:text="Obote Denis"
             android:textColor="#5A778C"
-            android:layout_marginTop="20dp"
-            android:layout_marginHorizontal="20dp"
             android:textSize="18sp"
-            android:includeFontPadding="false"
             android:transitionName="logo_text"
 
             />
@@ -86,11 +83,11 @@
             android:id="@+id/time_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
-            android:textColor="@color/black"
             android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/montserrat"
             android:includeFontPadding="false"
             android:text="Pump Attendant"
+            android:textColor="@color/black"
             android:textSize="17sp"
             android:transitionName="logo_desc" />
 
@@ -107,18 +104,25 @@
                 android:id="@+id/petrol_card"
                 android:layout_width="0dp"
                 android:layout_height="129.69dp"
+                android:layout_marginRight="15dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="#EEEEEE"
                 app:cardCornerRadius="11dp"
-                android:layout_marginRight="15dp"
 
                 >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingVertical="10dp"
-                    >
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_akar_icons_circle_check_fill__2_" />
 
                     <ImageView
                         android:layout_width="30dp"
@@ -217,8 +221,6 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-
-
         </LinearLayout>
 
         <LinearLayout
@@ -242,8 +244,15 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingVertical="10dp"
-                    >
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_akar_icons_circle_check_fill__2_" />
 
                     <ImageView
                         android:layout_width="30dp"
@@ -287,18 +296,7 @@
             </com.google.android.material.card.MaterialCardView>
 
 
-
-
-
-
-
         </LinearLayout>
-
-
-
-
-
-
 
 
     </LinearLayout>

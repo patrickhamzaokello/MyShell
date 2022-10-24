@@ -29,8 +29,7 @@ public class ShiftActivity extends AppCompatActivity {
             // Define ColorDrawable object and parse color
             // using parseColor method
             // with color hash code as its parameter
-            ColorDrawable colorDrawable
-                    = new ColorDrawable(ContextCompat.getColor(this, R.color.in_app_main_color));
+            ColorDrawable colorDrawable = new ColorDrawable(ContextCompat.getColor(this, R.color.in_app_main_color));
 
             // Set BackgroundDrawable
             actionBar.setBackgroundDrawable(colorDrawable);
