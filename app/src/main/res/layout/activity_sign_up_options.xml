@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/user_bg"
+    android:orientation="vertical"
+    android:scaleType="fitXY"
+    android:gravity="center_vertical"
+    tools:context=".SignUpOptions">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gold_on_green"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Taka Map"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Know where to take your trash or request a pick up through our app."
+        android:textColor="@color/texton_green"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/login_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/gold_on_green"
+        android:text="Login"
+        android:textColor="#000"
+        android:transitionName="account_button"
+
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="account_change"
+        android:text="Sign up with email"
+        android:textAllCaps="false"
+        android:textColor="@color/user_bg_not_selected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/user_bg_not_selected"
+        app:strokeWidth="1dp" />
+
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/texton_green"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/continue_agree"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3EA36A"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/learnmore"
+        />
+
+
+</LinearLayout>

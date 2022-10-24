@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_centerVertical="true"
+android:layout_centerInParent="true"
+android:background="@color/over_all_bg_color"
+android:scaleType="fitXY"
+tools:context=".Fragments.Profile">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/full_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/image_profile_card_view"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:textAllCaps="true"
+            android:text="Patrick Hamza"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:layout_toRightOf="@+id/image_profile_card_view"
+            android:includeFontPadding="false"
+            android:text="Cleaner Code"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/user_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:layout_toRightOf="@+id/image_profile_card_view"
+            android:includeFontPadding="false"
+            android:text="pkasemer@gmail.com | 0787250196 "
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/manageOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Info"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple_200"
+            android:visibility="gone"
+            android:transitionName="account_change"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="1dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/categorytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:text="About Us"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/section_label_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/section_label"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:text="Takataka is locally transforming plastic waste in Uganda into quality, affordable construction materials. We’re creating jobs, improving the environment and public health, and closing a loop in the circular economy."
+                android:textColor="@color/light_grey"
+                android:textSize="14sp" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/section_label_desc"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/about_us_btn"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read more"
+                    android:textColor="#2C5F2D"
+                    android:textAllCaps="false"
+                    android:transitionName="account_change"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginRight="20dp"
+                    app:strokeColor="#2C5F2D"
+                    app:strokeWidth="1dp" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_border_shape"
+            android:paddingVertical="10dp"
+            android:transitionName="account_change"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#fff"
+            app:strokeWidth="1dp" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_black"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/continue_agree"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_black"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/learnmore"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/light_black"
+            android:textSize="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:text="Powered by PK"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+</ScrollView>
+
+
