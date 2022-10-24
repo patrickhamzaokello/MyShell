@@ -3,13 +3,13 @@
     <item
         android:id="@+id/navigation_home"
         android:enabled="true"
-        android:icon="@drawable/ic_ep_location_filled"
+        android:icon="@drawable/ic_myhome"
         android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_search"
         android:enabled="true"
-        android:icon="@drawable/ic_heroicons_outline_trash"
+        android:icon="@drawable/shell_pump"
         android:title="@string/title_search" />
     <item
         android:id="@+id/navigation_cart"

@@ -2,6 +2,7 @@ package com.pkasemer.myshell;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
@@ -20,6 +21,10 @@ public class RootActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_root_activity);
+        ActionBar actionBar = getSupportActionBar(); // or getActionBar();
+        getSupportActionBar().setTitle("My Shell"); // set the top title
+        String title = actionBar.getTitle().toString(); // get the title
+        actionBar.hide();
         //Initialize Bottom Navigation View.
         navView = findViewById(R.id.bottomNav_view);
 
@@ -33,8 +38,8 @@ public class RootActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.navHostFragment);
         NavigationUI.setupWithNavController(navView, navController);
         navView.getOrCreateBadge(R.id.navigation_cart).setBackgroundColor(getResources().getColor(R.color.niceGreen));
-        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.user_bg));
-        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.user_bg));
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.in_app_main_color));
+        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.in_app_main_color));
     }
 
 

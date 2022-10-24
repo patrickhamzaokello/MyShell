@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/over_all_bg_color"
+    tools:context=".ShiftActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/heading_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:background="@color/in_app_main_color"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shelllogotwo"/>
+
+
+            <TextView
+                android:id="@+id/register_welcomeback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Day Shift"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:includeFontPadding="false"
+                android:transitionName="logo_text"
+
+                />
+
+            <TextView
+                android:id="@+id/register_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:text="Time:  12:45pm"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/time_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Obote Denis"
+            android:textColor="#5A778C"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="18sp"
+            android:includeFontPadding="false"
+            android:transitionName="logo_text"
+
+            />
+
+        <TextView
+            android:id="@+id/time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:includeFontPadding="false"
+            android:text="Pump Attendant"
+            android:textSize="17sp"
+            android:transitionName="logo_desc" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/petrol_card"
+                android:layout_width="0dp"
+                android:layout_height="129.69dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#EEEEEE"
+                app:cardCornerRadius="11dp"
+                android:layout_marginRight="15dp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_above="@+id/wallet_labels"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/shell_pump" />
+
+                    <TextView
+                        android:id="@+id/wallet_labels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/petrol_desc"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Petrol"
+                        android:textColor="#85A3B9"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/petrol_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Meter Reading"
+                        android:textColor="#85A3B9"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/vpower_card"
+                android:layout_width="0dp"
+                android:layout_height="129.69dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#EEEEEE"
+                app:cardCornerRadius="11dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_above="@+id/wallet_la"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/shell_pump" />
+
+                    <TextView
+                        android:id="@+id/wallet_la"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/wallet_dess"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="V-Power"
+                        android:textColor="#85A3B9"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/wallet_dess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Meter Reading"
+                        android:textColor="#85A3B9"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/diesel_card"
+                android:layout_width="0dp"
+                android:layout_height="129.69dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#EEEEEE"
+                app:cardCornerRadius="11dp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_above="@+id/diesel_lable"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/shell_pump" />
+
+                    <TextView
+                        android:id="@+id/diesel_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/wallet_descs"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Diesel"
+                        android:textColor="#85A3B9"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/wallet_descs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Meter Reading"
+                        android:textColor="#85A3B9"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/over_all_bg_color"
+    android:fillViewport="true"
+    tools:context=".MeterReading">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_bg"
+        android:backgroundTint="#F1F1F1">
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="4:30pm"
+            android:textColor="#767C80"
+            android:textSize="18sp"
+            android:transitionName="logo_text"
+
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/montserrat"
+            android:includeFontPadding="false"
+            android:text="24th Monday, October 2022"
+            android:textColor="#767C80"
+            android:textSize="15sp"
+            android:transitionName="logo_desc" />
+
+
+        <TextView
+            android:id="@+id/lablename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="Petrol"
+            android:textColor="#FF0000"
+            android:textSize="22sp"
+            android:transitionName="logo_text"
+
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/lablename"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="#FFD700"
+            android:fontFamily="@font/montserrat"
+            android:includeFontPadding="false"
+            android:text="Pump Attendant"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:transitionName="logo_desc" />
+
+
+        <TextView
+            android:id="@+id/meter_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:includeFontPadding="false"
+            android:text="Meter Reading Digits"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:transitionName="logo_desc" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/meter_reading_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meter_reading"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Meter Reading..."
+            android:textColorHint="@color/input_hint2"
+            android:transitionName="username_input"
+            app:boxStrokeColor="@color/input_colors"
+            app:boxStrokeErrorColor="@color/input_colors"
+            app:endIconTint="@color/input_hints"
+            app:hintTextColor="@color/input_hints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:inputType="textAutoComplete"
+                android:textColor="@color/input_colors"
+                app:background="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/meter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meter_reading_input"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
+            android:includeFontPadding="false"
+            android:text="Meter Reading Image"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:transitionName="logo_desc" />
+
+
+        <RelativeLayout
+            android:id="@+id/day_shift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@id/meter_image"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="#ddd"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_group_156" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/day_shift_layout"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_border_shape"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:transitionName="account_button"
+            app:backgroundTint="@color/black" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -19,7 +19,7 @@
     <string name="let_get_started">Lets Get Started</string>
     <string name="title_home">Home</string>
     <string name="title_profile">Profile</string>
-    <string name="title_search">Trash</string>
+    <string name="title_search">Shift</string>
     <string name="title_Cart">Issue</string>
 
     <string name="default_notification_channel_id">PushNotifications</string>

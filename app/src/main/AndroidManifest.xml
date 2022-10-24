@@ -32,8 +32,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.myshell"
         android:usesCleartextTraffic="true"
-        tools:replace="android:icon"
-        tools:ignore="UnusedAttribute">
+        tools:ignore="UnusedAttribute"
+        tools:replace="android:icon">
+        <activity
+            android:name=".MeterReading"
+            android:exported="false" />
+        <activity
+            android:name=".ShiftActivity"
+            android:exported="false" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.pkasemer.myshell.fileprovider"
@@ -44,23 +51,21 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name="com.pkasemer.myshell.SignUpOptions" />
+        <activity android:name=".SignUpOptions" />
         <activity
-            android:name="com.pkasemer.myshell.RootActivity"
+            android:name=".RootActivity"
             android:exported="true" />
         <activity
-            android:name="com.pkasemer.myshell.RegisterMaterial"
+            android:name=".RegisterMaterial"
             android:exported="true" />
         <activity
-            android:name="com.pkasemer.myshell.LoginMaterial"
+            android:name=".LoginMaterial"
             android:exported="true" />
-
         <activity
-            android:name="com.pkasemer.myshell.SplashActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.SplashTheme"
-            >
+            android:theme="@style/Theme.SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

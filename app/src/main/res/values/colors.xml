@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFD600</color>
-    <color name="purple_500">#f6d330</color>
-    <color name="purple_700">#FFD600</color>
+    <color name="purple_200">#FFD700</color>
+    <color name="purple_500">#FFD700</color>
+    <color name="purple_700">#FFD700</color>
     <color name="teal_200">#cc2229</color>
     <color name="teal_700">#cc2229</color>
     <color name="texton_green">#000000</color>
@@ -41,7 +41,7 @@
     <color name="cards">#03A64A</color>
     <color name="cardtitle">#F5FFF4</color>
     <color name="carddescript">#E4E8E3</color>
-    <color name="over_all_bg_color">#F1FFFD</color>
+    <color name="over_all_bg_color">#FFFFFF</color>
     <color name="gold_on_green">#cc2229</color>
     <color name="input_colors">#252525</color>
     <color name="input_bg">#EAEAEA</color>
@@ -49,8 +49,9 @@
     <color name="input_hints">#232323</color>
     <color name="input_hint2">#191919</color>
     <color name="user_bg">#FFFFFF</color>
-    <color name="user_bg_not_selected">#f6d330</color>
-    <color name="gold_on_green_text">#f6d330</color>
+    <color name="user_bg_not_selected">#FFD700</color>
+    <color name="gold_on_green_text">#FFD700</color>
+    <color name="in_app_main_color">#FFD700</color>
 
 
 </resources>

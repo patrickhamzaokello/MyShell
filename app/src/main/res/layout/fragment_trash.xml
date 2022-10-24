@@ -8,32 +8,41 @@
     android:background="@color/over_all_bg_color"
     tools:context="Fragments.Trash">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         >
 
-        <ProgressBar
-            android:id="@+id/main_progress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center" />
 
         <LinearLayout
+            android:id="@+id/heading_intro"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="20dp">
+            android:padding="14dp"
+            android:background="@color/in_app_main_color"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shelllogotwo"/>
+
 
             <TextView
                 android:id="@+id/register_welcomeback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:text="Pickup"
-                android:textColor="#000"
+                android:text="Obote Denis"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
                 android:textSize="25sp"
                 android:includeFontPadding="false"
                 android:transitionName="logo_text"
@@ -45,175 +54,149 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
                 android:includeFontPadding="false"
-                android:textColor="#9E9E9E"
-                android:text="fill the form below to make a pickup request."
-                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:text="Pump Attendant"
+                android:textSize="17sp"
                 android:transitionName="logo_desc" />
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:orientation="vertical">
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/login_fullname"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintTextColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:boxStrokeColor="@color/black"
-                    app:boxStrokeErrorColor="@color/purple_500"
-                    android:layout_marginTop="5dp"
-                    android:hint="Full Name">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/inputTextFullname"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="text"
-                        android:textColor="@color/black"
-
-                        />
-
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/login_user_phone"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    app:hintTextColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:boxStrokeColor="@color/black"
-                    app:boxStrokeErrorColor="@color/purple_500"
-                    android:hint="Phone Number">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/inputTextPhone"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-
-                        android:inputType="phone" />
-
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/login_user_address"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    app:hintTextColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:boxStrokeColor="@color/black"
-                    app:boxStrokeErrorColor="@color/purple_500"
-                    android:hint="Location Address">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/inputTextUserAddress"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-
-                        android:inputType="textPostalAddress" />
-
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/editTextDescription_layout"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:hint="Description"
-                    android:textColorHint="@color/black"
-                    android:transitionName="username_input"
-                    app:boxStrokeColor="@color/black"
-                    app:boxStrokeErrorColor="@color/black"
-                    app:hintTextColor="@color/black">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/editTextDescription"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="top|left"
-                        android:inputType="textMultiLine"
-                        android:lines="8"
-                        android:maxLines="10"
-                        android:minLines="4"
-                        android:scrollbars="vertical"
-                        android:textColor="@color/black" />
-
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-                <Button
-                    android:id="@+id/submit_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Submit"
-                    android:background="@drawable/rounded_border_shape"
-                    android:textColor="#fff"
-                    android:transitionName="account_button"
-                    />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/light_black"
-                android:textSize="12dp"
-                android:gravity="center"
-                android:fontFamily="@font/montserrat"
-                android:text="@string/continue_agree"
-                />
-            <TextView
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/light_black"
-                android:textSize="12dp"
-                android:gravity="center"
-                android:fontFamily="@font/montserrat"
-                android:text="@string/learnmore"
-                />
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:textColor="@color/light_black"
-                android:textSize="5dp"
-                android:gravity="center"
-                android:fontFamily="@font/montserrat"
-                android:text="Powered by PK"
-                />
 
         </LinearLayout>
 
 
 
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/time_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="4:30pm"
+            android:textColor="#5A778C"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="25sp"
+            android:includeFontPadding="false"
+            android:transitionName="logo_text"
+
+            />
+
+        <TextView
+            android:id="@+id/time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:includeFontPadding="false"
+            android:text="24th Monday, October 2022"
+            android:textSize="17sp"
+            android:transitionName="logo_desc" />
+
+
+        <RelativeLayout
+            android:id="@+id/day_shift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/day_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day_shift_time"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:text="Day Shift"
+                android:textColor="#5A778C"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+            <TextView
+                android:id="@+id/day_shift_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:text="6:00 am - 6:00 pm"
+                android:textColor="#85A3B9"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/day_shift"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/night_shift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/night_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/night_shift_time"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:text="Night Shift"
+                android:textColor="#5A778C"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+            <TextView
+                android:id="@+id/night_shift_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:text="6:00 pm - 6:00 am"
+                android:textColor="#85A3B9"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_night_shift" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
 
 </ScrollView>

@@ -1,53 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@color/over_all_bg_color"
-    tools:context=".Fragments.Home">
+    tools:context="Fragments.Home">
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        app:cardBackgroundColor="@color/purple_500"
-        app:cardCornerRadius="50dp"
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="5dp">
 
-            <Button
-                android:id="@+id/infrastructure_filter"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/custom_filter_btn"
-                android:theme="@style/WhiteBtn" />
+        <LinearLayout
+            android:id="@+id/heading_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:background="@color/in_app_main_color"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shelllogotwo"/>
+
+
+            <TextView
+                android:id="@+id/register_welcomeback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Obote Denis"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:includeFontPadding="false"
+                android:transitionName="logo_text"
+
+                />
+
+            <TextView
+                android:id="@+id/register_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:text="Pump Attendant"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/time_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="4:30pm"
+            android:textColor="#5A778C"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="25sp"
+            android:includeFontPadding="false"
+            android:transitionName="logo_text"
+
+            />
+
+        <TextView
+            android:id="@+id/time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="20dp"
+            android:includeFontPadding="false"
+            android:text="24th Monday, October 2022"
+            android:textSize="17sp"
+            android:transitionName="logo_desc" />
+
+
+        <RelativeLayout
+            android:id="@+id/day_shift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/day_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day_shift_time"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:text="Day Shift"
+                android:textColor="#5A778C"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+            <TextView
+                android:id="@+id/day_shift_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:text="6:00 am - 6:00 pm"
+                android:textColor="#85A3B9"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/day_shift"/>
+
 
         </RelativeLayout>
 
 
-    </com.google.android.material.card.MaterialCardView>
+        <RelativeLayout
+            android:id="@+id/night_shift_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginHorizontal="20dp"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            >
 
-    <com.google.android.gms.maps.MapView
-        android:layout_alignParentTop="true"
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/night_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/night_shift_time"
+                android:fontFamily="@font/montserrat_bold"
+                android:includeFontPadding="false"
+                android:text="Night Shift"
+                android:textColor="#5A778C"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
 
-    <ProgressBar
-        android:id="@+id/main_progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/night_shift_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:text="6:00 pm - 6:00 am"
+                android:textColor="#85A3B9"
+                android:textSize="17sp"
+                android:transitionName="logo_desc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_night_shift" />
+
+
+        </RelativeLayout>
 
 
 
-</FrameLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
