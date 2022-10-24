@@ -15,7 +15,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class RootActivity extends AppCompatActivity {
 
     BottomNavigationView navView;
-    private static final int REQUEST_CODE = 12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +38,7 @@ public class RootActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
         navView.getOrCreateBadge(R.id.navigation_cart).setBackgroundColor(getResources().getColor(R.color.niceGreen));
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.in_app_main_color));
-        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.in_app_main_color));
+        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.user_bg));
     }
 
 

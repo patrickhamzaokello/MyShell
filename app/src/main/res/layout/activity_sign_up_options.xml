@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:scaleType="fitXY"
     android:gravity="center_vertical"
-    tools:context=".SignUpOptions">
+    tools:context=".SplashActivity">
 
 
     <ImageView

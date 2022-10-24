@@ -53,8 +53,10 @@ public class Trash extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(getContext(), ShiftActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getContext(), ShiftActivity.class);
+                intent.putExtra(getString(R.string.shift_lable), "Day Shift");
+                intent.putExtra(getString(R.string.shift_type_id), "shell_day_001");
+                startActivity(intent);
 
             }
         });
@@ -62,8 +64,10 @@ public class Trash extends Fragment {
         night_shift_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getContext(), ShiftActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getContext(), ShiftActivity.class);
+                intent.putExtra(getString(R.string.shift_lable), "Night Shift");
+                intent.putExtra(getString(R.string.shift_type_id), "shell_night_002");
+                startActivity(intent);
             }
         });
 

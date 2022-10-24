@@ -9,18 +9,33 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.card.MaterialCardView;
 
 public class ShiftActivity extends AppCompatActivity {
     ActionBar actionBar;
     MaterialCardView petrol_card,vpower_card,diesel_card;
+    String shift_lable,shift_type_id;
+    TextView shift_id,shift_day;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shift);
         actionBar = getSupportActionBar(); // or getActionBar();
-        actionBar.setTitle("Day Shift");
+        Bundle extras = getIntent().getExtras();
+        shift_day = findViewById(R.id.shift_day);
+        shift_id = findViewById(R.id.shift_id);
+
+        if (extras != null) {
+            shift_lable = extras.getString(getString(R.string.shift_lable));
+            shift_type_id = extras.getString(getString(R.string.shift_type_id));
+            // and get whatever type user account id is
+            actionBar.setTitle(shift_lable);
+            shift_day.setText(shift_lable);
+            shift_id.setText(shift_type_id);
+
+        }
         // add back arrow to toolbar
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -45,7 +60,10 @@ public class ShiftActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ShiftActivity.this, MeterReading.class);
-                intent.putExtra("Petrol", "Petrol");
+                intent.putExtra(getString(R.string.meter_lable), "Petrol");
+                intent.putExtra(getString(R.string.meter_type_id), "shell_201");
+                intent.putExtra(getString(R.string.shift_lable), shift_lable);
+                intent.putExtra(getString(R.string.shift_type_id), shift_type_id);
                 startActivity(intent);
             }
         });
@@ -54,7 +72,10 @@ public class ShiftActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ShiftActivity.this, MeterReading.class);
-                intent.putExtra("Petrol", "V-Power");
+                intent.putExtra(getString(R.string.meter_lable), "V-Power");
+                intent.putExtra(getString(R.string.meter_type_id), "shell_202");
+                intent.putExtra(getString(R.string.shift_lable), shift_lable);
+                intent.putExtra(getString(R.string.shift_type_id), shift_type_id);
                 startActivity(intent);
             }
         });
@@ -63,7 +84,10 @@ public class ShiftActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ShiftActivity.this, MeterReading.class);
-                intent.putExtra("Petrol", "Diesel");
+                intent.putExtra(getString(R.string.meter_lable), "Diesel");
+                intent.putExtra(getString(R.string.meter_type_id), "shell_203");
+                intent.putExtra(getString(R.string.shift_lable), shift_lable);
+                intent.putExtra(getString(R.string.shift_type_id), shift_type_id);
                 startActivity(intent);
             }
         });

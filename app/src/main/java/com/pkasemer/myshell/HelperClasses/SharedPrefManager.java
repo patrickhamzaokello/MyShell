@@ -17,7 +17,7 @@ import com.pkasemer.myshell.Models.UserModel;
 public class SharedPrefManager {
 
     //the constants
-    private static final String SHARED_PREF_NAME = "taka_map_pref";
+    private static final String SHARED_PREF_NAME = "shell_app";
     private static final String KEY_FULLNAME = "keyfullname";
     private static final String KEY_USERNAME = "keyusername";
     private static final String KEY_EMAIL = "keyemail";

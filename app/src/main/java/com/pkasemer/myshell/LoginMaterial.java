@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -45,7 +46,10 @@ public class LoginMaterial extends AppCompatActivity {
 
         setContentView(R.layout.activity_login_material);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.user_bg));
-
+        ActionBar actionBar = getSupportActionBar(); // or getActionBar();
+        getSupportActionBar().setTitle("My Shell"); // set the top title
+        String title = actionBar.getTitle().toString(); // get the title
+        actionBar.hide();
         //if the user is already logged in we will directly start the profile activity
         if (SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();

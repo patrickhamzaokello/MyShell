@@ -6,15 +6,29 @@ import androidx.core.content.ContextCompat;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MeterReading extends AppCompatActivity {
     ActionBar actionBar;
+    String meter_type_id;
+    String meter_lable;
+    TextView title_label;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meter_reading);
         actionBar = getSupportActionBar(); // or getActionBar();
-        actionBar.setTitle("Day Shift");
+        Bundle extras = getIntent().getExtras();
+
+        title_label = findViewById(R.id.lablename);
+
+        if (extras != null) {
+            meter_lable = extras.getString(getString(R.string.meter_lable));
+            // and get whatever type user account id is
+            actionBar.setTitle(meter_lable);
+            title_label.setText(meter_lable);
+
+        }
         // add back arrow to toolbar
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
