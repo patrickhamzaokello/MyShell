@@ -23,6 +23,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -78,6 +80,7 @@ public class Home extends Fragment {
         // Required empty public constructor
     }
 
+    RelativeLayout start_shift_layout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,7 +95,14 @@ public class Home extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-
+        start_shift_layout = view.findViewById(R.id.start_shift_layout);
+        start_shift_layout.setClickable(true);
+        start_shift_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.home_to_shift);
+            }
+        });
 
         return view;
     }

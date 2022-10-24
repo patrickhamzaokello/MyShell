@@ -11,53 +11,20 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/rounded_bg"
-        android:backgroundTint="#F1F1F1">
-
-
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:includeFontPadding="false"
-            android:text="4:30pm"
-            android:textColor="#767C80"
-            android:textSize="18sp"
-            android:transitionName="logo_text"
-
-            />
-
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/time"
-            android:layout_marginHorizontal="20dp"
-            android:fontFamily="@font/montserrat"
-            android:includeFontPadding="false"
-            android:text="24th Monday, October 2022"
-            android:textColor="#767C80"
-            android:textSize="15sp"
-            android:transitionName="logo_desc" />
+        android:layout_height="wrap_content">
 
 
         <TextView
             android:id="@+id/lablename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/date"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/montserrat_bold"
             android:includeFontPadding="false"
             android:text="Petrol"
             android:textColor="#FF0000"
-            android:textSize="22sp"
+            android:textSize="25sp"
             android:transitionName="logo_text"
 
             />
@@ -77,14 +44,43 @@
             android:textSize="17sp"
             android:transitionName="logo_desc" />
 
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lablename"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="Day Shift"
+            android:textColor="#767C80"
+            android:textSize="18sp"
+            android:transitionName="logo_text"
+
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/montserrat"
+            android:includeFontPadding="false"
+            android:text="4:30pm, 24th Monday, October 2022"
+            android:textColor="#767C80"
+            android:textSize="15sp"
+            android:transitionName="logo_desc" />
+
 
         <TextView
             android:id="@+id/meter_reading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/view"
+            android:layout_below="@id/date"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/montserrat"
             android:includeFontPadding="false"
             android:text="Meter Reading Digits"
@@ -138,10 +134,10 @@
         <RelativeLayout
             android:id="@+id/day_shift_layout"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="130dp"
             android:layout_below="@id/meter_image"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/rounded_bg"
             android:backgroundTint="#ddd"
             android:padding="20dp">

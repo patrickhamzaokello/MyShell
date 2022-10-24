@@ -11,8 +11,8 @@ import android.widget.TextView;
 public class MeterReading extends AppCompatActivity {
     ActionBar actionBar;
     String meter_type_id;
-    String meter_lable;
-    TextView title_label;
+    String meter_lable,time_lable;
+    TextView title_label,time;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,12 +21,15 @@ public class MeterReading extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         title_label = findViewById(R.id.lablename);
+        time = findViewById(R.id.time);
 
         if (extras != null) {
             meter_lable = extras.getString(getString(R.string.meter_lable));
+            time_lable = extras.getString(getString(R.string.shift_lable));
             // and get whatever type user account id is
             actionBar.setTitle(meter_lable);
             title_label.setText(meter_lable);
+            time.setText(time_lable);
 
         }
         // add back arrow to toolbar

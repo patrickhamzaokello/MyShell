@@ -5,6 +5,9 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -21,15 +24,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/Fragments/Trash.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/Fragments/Trash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/HelperClasses/SharedPrefManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/HelperClasses/SharedPrefManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/Fragments/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/Fragments/Home.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/MeterReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/MeterReading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/RootActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/RootActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/ShiftActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/ShiftActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/SignUpOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/SignUpOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkasemer/myshell/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_shift.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_shift.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_meter_reading.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_meter_reading.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

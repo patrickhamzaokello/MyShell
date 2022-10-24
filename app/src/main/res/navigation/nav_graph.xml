@@ -11,6 +11,16 @@
         android:name="com.pkasemer.myshell.Fragments.Home"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/home_to_shift"
+            app:destination="@id/navigation_search"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim"
+            app:launchSingleTop="true" />
     </fragment>
 
     <fragment
