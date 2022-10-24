@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#025920</color>
-    <color name="purple_500">#027313</color>
-    <color name="purple_700">#0d4a3a</color>
-    <color name="teal_200">#0C5927</color>
-    <color name="teal_700">#0F5937</color>
-    <color name="texton_green">#DEFFDD</color>
+    <color name="purple_200">#FFD600</color>
+    <color name="purple_500">#f6d330</color>
+    <color name="purple_700">#FFD600</color>
+    <color name="teal_200">#cc2229</color>
+    <color name="teal_700">#cc2229</color>
+    <color name="texton_green">#000000</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
@@ -42,14 +42,15 @@
     <color name="cardtitle">#F5FFF4</color>
     <color name="carddescript">#E4E8E3</color>
     <color name="over_all_bg_color">#F1FFFD</color>
-    <color name="gold_on_green">#F2CB05</color>
-    <color name="input_colors">#F6E590</color>
-    <color name="input_bg">#115A48</color>
-    <color name="text_on_green">#FF03A64A</color>
-    <color name="input_hints">#3EA36A</color>
-    <color name="input_hint2">#FFDEFFDD</color>
-    <color name="user_bg">#0d4a3a</color>
-    <color name="user_bg_not_selected">#3EA36A</color>
+    <color name="gold_on_green">#cc2229</color>
+    <color name="input_colors">#252525</color>
+    <color name="input_bg">#EAEAEA</color>
+    <color name="text_on_green">#3E3E3E</color>
+    <color name="input_hints">#232323</color>
+    <color name="input_hint2">#191919</color>
+    <color name="user_bg">#FFFFFF</color>
+    <color name="user_bg_not_selected">#f6d330</color>
+    <color name="gold_on_green_text">#f6d330</color>
 
 
 </resources>

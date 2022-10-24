@@ -20,12 +20,19 @@
             android:orientation="vertical"
             android:paddingHorizontal="20dp">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shelllogotwo"/>
+
             <TextView
                 android:id="@+id/register_welcomeback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
                 android:fontFamily="@font/montserrat_bold"
                 android:includeFontPadding="false"
                 android:text="Welcome"
@@ -85,33 +92,7 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/login_username"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:hint="Username"
-                    android:textColorHint="@color/input_hint2"
-                    android:transitionName="username_input"
-                    app:boxStrokeColor="@color/input_colors"
-                    app:boxStrokeErrorColor="@color/input_colors"
-                    app:counterMaxLength="15"
-                    app:endIconTint="@color/input_hints"
-                    app:hintTextColor="@color/input_hints">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/inputTextUsername"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/input_bg"
-                        android:inputType="text"
-                        android:textColor="@color/input_colors"
-
-                        />
-
-
-                </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/login_user_email"
@@ -238,7 +219,7 @@
                     android:layout_marginBottom="5dp"
                     android:backgroundTint="@color/gold_on_green"
                     android:text="Register"
-                    android:textColor="#000"
+                    android:textColor="@color/gold_on_green_text"
                     android:transitionName="account_button"
 
                     />
@@ -276,19 +257,10 @@
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="@string/learnmore"
-                android:textColor="#3EA36A"
+                android:textColor="@color/text_on_green"
                 android:textSize="12dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/montserrat"
-                android:gravity="center"
-                android:text="Powered by PK"
-                android:textColor="@color/text_on_green"
-                android:textSize="5dp" />
+
 
         </LinearLayout>
 

@@ -12,6 +12,14 @@
     tools:context=".SignUpOptions">
 
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/shelllogotwo"/>
+
+
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
@@ -31,7 +39,7 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="Know where to take your trash or request a pick up through our app."
+        android:text="Fuel Pump Tracking and Monitoring App."
         android:textColor="@color/texton_green"
         android:textSize="20dp" />
 
@@ -44,7 +52,7 @@
         android:textAllCaps="false"
         android:backgroundTint="@color/gold_on_green"
         android:text="Login"
-        android:textColor="#000"
+        android:textColor="@color/gold_on_green_text"
         android:transitionName="account_button"
 
         />
@@ -80,7 +88,7 @@
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#3EA36A"
+        android:textColor="@color/text_on_green"
         android:textSize="12dp"
         android:gravity="center"
         android:fontFamily="@font/montserrat"

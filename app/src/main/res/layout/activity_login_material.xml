@@ -25,6 +25,13 @@
             android:orientation="vertical"
             android:paddingHorizontal="20dp">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shelllogotwo"/>
+
             <TextView
                 android:id="@+id/login_welcomeback"
                 android:layout_width="wrap_content"
@@ -67,7 +74,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username / Email"
+                    android:hint="Phone No / Email"
                     android:textColorHint="@color/input_hint2"
                     app:hintTextColor="@color/input_hints"
                     app:endIconTint="@color/input_hints"
@@ -126,7 +133,7 @@
                     android:layout_marginBottom="5dp"
                     android:backgroundTint="@color/gold_on_green"
                     android:text="Log In"
-                    android:textColor="#000"
+                    android:textColor="@color/gold_on_green_text"
                     android:transitionName="account_button"
 
                     />
@@ -164,7 +171,7 @@
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="@string/learnmore"
-                android:textColor="#3EA36A"
+                android:textColor="@color/text_on_green"
                 android:textSize="12dp" />
 
             <TextView
@@ -174,7 +181,7 @@
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/montserrat"
                 android:gravity="center"
-                android:text="Powered by PK"
+                android:text="Kakebe Technologies"
                 android:textColor="@color/text_on_green"
                 android:textSize="5dp" />
 

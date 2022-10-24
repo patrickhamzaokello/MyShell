@@ -34,7 +34,7 @@ public class RegisterMaterial extends AppCompatActivity {
     Button callLogIN, register_btn;
     TextInputLayout username_layout, password_layout;
 
-    TextInputEditText inputTextFullname, inputTextUsername, inputTextEmail, inputTextPhone,inputTextPassword, inputTextConfirmPassword;
+    TextInputEditText inputTextFullname, inputTextEmail, inputTextPhone,inputTextPassword, inputTextConfirmPassword;
     RadioGroup radioGroupGender;
 
     @Override
@@ -64,7 +64,6 @@ public class RegisterMaterial extends AppCompatActivity {
 
         //get text from input boxes
         inputTextFullname = findViewById(R.id.inputTextFullname);
-        inputTextUsername = findViewById(R.id.inputTextUsername);
         inputTextEmail = findViewById(R.id.inputTextEmail);
         inputTextPhone = findViewById(R.id.inputTextPhone);
         inputTextPassword = findViewById(R.id.inputTextPassword);
@@ -104,7 +103,6 @@ public class RegisterMaterial extends AppCompatActivity {
 
     private void registerUser() {
         final String full_name = inputTextFullname.getText().toString().trim();
-        final String user_name = inputTextUsername.getText().toString().trim();
         final String user_email = inputTextEmail.getText().toString().trim();
         final String user_phone = inputTextPhone.getText().toString().trim();
         final String user_password = inputTextPassword.getText().toString().trim();
@@ -120,11 +118,6 @@ public class RegisterMaterial extends AppCompatActivity {
             return;
         }
 
-        if (TextUtils.isEmpty(user_name)) {
-            inputTextUsername.setError("Please enter username");
-            inputTextUsername.requestFocus();
-            return;
-        }
 
         if (TextUtils.isEmpty(user_email)) {
             inputTextEmail.setError("Please enter your email");
@@ -171,7 +164,6 @@ public class RegisterMaterial extends AppCompatActivity {
                 //creating request parameters
                 HashMap<String, String> params = new HashMap<>();
                 params.put("full_name", full_name);
-                params.put("username", user_name);
                 params.put("email", user_email);
                 params.put("user_phone", user_phone);
                 params.put("password", user_password);
