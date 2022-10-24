@@ -134,12 +134,12 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerInside"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/day_shift"/>
+                android:src="@drawable/day_shift" />
 
 
         </RelativeLayout>

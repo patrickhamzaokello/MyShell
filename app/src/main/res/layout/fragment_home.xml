@@ -103,14 +103,14 @@
                 android:transitionName="logo_desc" />
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/day_shift" />
+                android:src="@drawable/ic_fluent_phone_update_checkmark_20_filled" />
 
 
         </RelativeLayout>
@@ -152,14 +152,14 @@
                 android:transitionName="logo_desc" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/ic_night_shift" />
+                android:src="@drawable/ic_fluent_shifts_add_20_filled" />
 
 
         </RelativeLayout>
