@@ -51,7 +51,6 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".SignUpOptions" />
         <activity
             android:name=".RootActivity"
             android:exported="true" />

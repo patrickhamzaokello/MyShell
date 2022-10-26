@@ -45,7 +45,7 @@
     <string name="provider_failed">Location turned off</string>
     <string name="learnmore">Learn more @ myshell.com, 2022</string>
     <string name="continue_agree">By continuing you indicate that you agree to My Shell\'s Terms of Service and Privacy Policy</string>
-    <string name="fileprovider">com.pkasemer.takamap.fileprovider</string>
+    <string name="fileprovider">com.pkasemer.myshell.fileprovider</string>
     <string name="internal_storage">internal_storage</string>
     <string name="meter_lable">meter_lable</string>
     <string name="meter_type_id">meter_type_id</string>

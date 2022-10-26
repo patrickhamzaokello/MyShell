@@ -74,28 +74,16 @@
             android:transitionName="logo_desc" />
 
 
-        <TextView
-            android:id="@+id/meter_reading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/date"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="40dp"
-            android:fontFamily="@font/montserrat"
-            android:includeFontPadding="false"
-            android:text="Meter Reading Digits"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:transitionName="logo_desc" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/meter_reading_input"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/meter_reading"
+            android:layout_below="@id/date"
+
             android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="40dp"
             android:hint="Enter Meter Reading..."
             android:textColorHint="@color/input_hint2"
             android:transitionName="username_input"
@@ -105,11 +93,11 @@
             app:hintTextColor="@color/input_hints">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputTextUsername"
+                android:id="@+id/meter_reading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFFFFF"
-                android:inputType="textAutoComplete"
+                android:inputType="number"
                 android:textColor="@color/input_colors"
                 app:background="@color/black" />
 
@@ -131,33 +119,52 @@
             android:transitionName="logo_desc" />
 
 
-        <RelativeLayout
-            android:id="@+id/day_shift_layout"
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/camera_view"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_below="@id/meter_image"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/meter_image"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_bg"
-            android:backgroundTint="#ddd"
-            android:padding="20dp">
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="#EEEEEE"
+            app:cardElevation="0dp"
+            >
 
             <ImageView
+                android:id="@+id/taken_image"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/take_image"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_centerInParent="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:scaleType="centerInside"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_group_156" />
+        </com.google.android.material.card.MaterialCardView>
 
-        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/main_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/camera_view"
+            android:layout_alignTop="@+id/submit_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/submit_btn"
+            android:elevation="10dp" />
+
 
         <Button
             android:id="@+id/submit_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/day_shift_layout"
+            android:layout_below="@id/camera_view"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="5dp"
